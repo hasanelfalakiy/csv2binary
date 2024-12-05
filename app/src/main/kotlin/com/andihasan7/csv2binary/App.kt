@@ -3,219 +3,217 @@
  */
 package com.andihasan7.csv2binary
 
-import com.andihasan7.csv2binary.csv2bin.ConvertCsvToBinary
-import com.andihasan7.csv2binary.readerbin.ReaderBin
-
+import com.andihasan7.csv2binary.csv2kt.ConvertCsvToKotlin
 
 fun main() {
 
-    val earthL0 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L0.csv"
-    val earthL0Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L0.bin"
-    val earthL1 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L1.csv"
-    val earthL1Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L1.bin"
-    val earthL2 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L2.csv"
-    val earthL2Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L2.bin"
-    val earthL3 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L3.csv"
-    val earthL3Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L3.bin"
-    val earthL4 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L4.csv"
-    val earthL4Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L4.bin"
-    val earthL5 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L5.csv"
-    val earthL5Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-L5.bin"
+    val earthL0 = "EARTH-L0.csv"
+    val earthL0Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_L0.kt"
+    val earthL1 = "EARTH-L1.csv"
+    val earthL1Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_L1.kt"
+    val earthL2 = "EARTH-L2.csv"
+    val earthL2Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_L2.kt"
+    val earthL3 = "EARTH-L3.csv"
+    val earthL3Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_L3.kt"
+    val earthL4 = "EARTH-L4.csv"
+    val earthL4Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_L4.kt"
+    val earthL5 = "EARTH-L5.csv"
+    val earthL5Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_L5.kt"
 
-    val earthB0 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B0.csv"
-    val earthB0Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B0.bin"
-    val earthB1 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B1.csv"
-    val earthB1Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B1.bin"
-    val earthB2 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B2.csv"
-    val earthB2Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B2.bin"
-    val earthB3 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B3.csv"
-    val earthB3Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B3.bin"
-    val earthB4 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B4.csv"
-    val earthB4Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-B4.bin"
+    val earthB0 = "EARTH-B0.csv"
+    val earthB0Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_B0.kt"
+    val earthB1 = "EARTH-B1.csv"
+    val earthB1Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_B1.kt"
+    val earthB2 = "EARTH-B2.csv"
+    val earthB2Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_B2.kt"
+    val earthB3 = "EARTH-B3.csv"
+    val earthB3Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_B3.kt"
+    val earthB4 = "EARTH-B4.csv"
+    val earthB4Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_B4.kt"
 
-    val earthR0 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R0.csv"
-    val earthR0Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R0.bin"
-    val earthR1 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R1.csv"
-    val earthR1Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R1.bin"
-    val earthR2 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R2.csv"
-    val earthR2Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R2.bin"
-    val earthR3 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R3.csv"
-    val earthR3Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R3.bin"
-    val earthR4 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R4.csv"
-    val earthR4Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R4.bin"
-    val earthR5 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R5.csv"
-    val earthR5Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/EARTH-R5.bin"
+    val earthR0 = "EARTH-R0.csv"
+    val earthR0Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_R0.kt"
+    val earthR1 = "EARTH-R1.csv"
+    val earthR1Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_R1.kt"
+    val earthR2 = "EARTH-R2.csv"
+    val earthR2Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_R2.kt"
+    val earthR3 = "EARTH-R3.csv"
+    val earthR3Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_R3.kt"
+    val earthR4 = "EARTH-R4.csv"
+    val earthR4Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_R4.kt"
+    val earthR5 = "EARTH-R5.csv"
+    val earthR5Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/EARTH_R5.kt"
 
-    val moonL000 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-00.csv"
-    val moonL000Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-00.bin"
-    val moonL001 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-01.csv"
-    val moonL001Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-01.bin"
-    val moonL002 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-02.csv"
-    val moonL002Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-02.bin"
-    val moonL003 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-03.csv"
-    val moonL003Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-03.bin"
-    val moonL004 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-04.csv"
-    val moonL004Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-04.bin"
-    val moonL005 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-05.csv"
-    val moonL005Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-05.bin"
-    val moonL006 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-06.csv"
-    val moonL006Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-06.bin"
-    val moonL007 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-07.csv"
-    val moonL007Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-07.bin"
-    val moonL008 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-08.csv"
-    val moonL008Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-08.bin"
-    val moonL009 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-09.csv"
-    val moonL009Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-09.bin"
-    val moonL010 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-10.csv"
-    val moonL010Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-10.bin"
-    val moonL011 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-11.csv"
-    val moonL011Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-11.bin"
-    val moonL012 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-12.csv"
-    val moonL012Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L0-12.bin"
-    val moonL1 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L1.csv"
-    val moonL1Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L1.bin"
-    val moonL2 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L2.csv"
-    val moonL2Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L2.bin"
-    val moonL3 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L3.csv"
-    val moonL3Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-L3.bin"
+    val moonL000 = "MOON-L0-00.csv"
+    val moonL000Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_00.kt"
+    val moonL001 = "MOON-L0-01.csv"
+    val moonL001Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_01.kt"
+    val moonL002 = "MOON-L0-02.csv"
+    val moonL002Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_02.kt"
+    val moonL003 = "MOON-L0-03.csv"
+    val moonL003Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_03.kt"
+    val moonL004 = "MOON-L0-04.csv"
+    val moonL004Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_04.kt"
+    val moonL005 = "MOON-L0-05.csv"
+    val moonL005Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_05.kt"
+    val moonL006 = "MOON-L0-06.csv"
+    val moonL006Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_06.kt"
+    val moonL007 = "MOON-L0-07.csv"
+    val moonL007Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_07.kt"
+    val moonL008 = "MOON-L0-08.csv"
+    val moonL008Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_08.kt"
+    val moonL009 = "MOON-L0-09.csv"
+    val moonL009Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_09.kt"
+    val moonL010 = "MOON-L0-10.csv"
+    val moonL010Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_10.kt"
+    val moonL011 = "MOON-L0-11.csv"
+    val moonL011Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_11.kt"
+    val moonL012 = "MOON-L0-12.csv"
+    val moonL012Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L0_12.kt"
+    val moonL1 = "MOON-L1.csv"
+    val moonL1Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L1.kt"
+    val moonL2 = "MOON-L2.csv"
+    val moonL2Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L2.kt"
+    val moonL3 = "MOON-L3.csv"
+    val moonL3Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_L3.kt"
 
-    val moonB000 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-00.csv"
-    val moonB000Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-00.bin"
-    val moonB001 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-01.csv"
-    val moonB001Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-01.bin"
-    val moonB002 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-02.csv"
-    val moonB002Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-02.bin"
-    val moonB003 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-03.csv"
-    val moonB003Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-03.bin"
-    val moonB004 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-04.csv"
-    val moonB004Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-04.bin"
-    val moonB005 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-05.csv"
-    val moonB005Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-05.bin"
-    val moonB006 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-06.csv"
-    val moonB006Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-06.bin"
-    val moonB007 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-07.csv"
-    val moonB007Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B0-07.bin"
+    val moonB000 = "MOON-B0-00.csv"
+    val moonB000Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B0_00.kt"
+    val moonB001 = "MOON-B0-01.csv"
+    val moonB001Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B0_01.kt"
+    val moonB002 = "MOON-B0-02.csv"
+    val moonB002Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B0_02.kt"
+    val moonB003 = "MOON-B0-03.csv"
+    val moonB003Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B0_03.kt"
+    val moonB004 = "MOON-B0-04.csv"
+    val moonB004Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B0_04.kt"
+    val moonB005 = "MOON-B0-05.csv"
+    val moonB005Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B0_05.kt"
+    val moonB006 = "MOON-B0-06.csv"
+    val moonB006Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B0_06.kt"
+    val moonB007 = "MOON-B0-07.csv"
+    val moonB007Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B0_07.kt"
 
-    val moonB1 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B1.csv"
-    val moonB1Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B1.bin"
-    val moonB2 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B2.csv"
-    val moonB2Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-B2.bin"
+    val moonB1 = "MOON-B1.csv"
+    val moonB1Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B1.kt"
+    val moonB2 = "MOON-B2.csv"
+    val moonB2Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_B2.kt"
 
-    val moonR000 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-00.csv"
-    val moonR000Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-00.bin"
-    val moonR001 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-01.csv"
-    val moonR001Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-01.bin"
-    val moonR002 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-02.csv"
-    val moonR002Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-02.bin"
-    val moonR003 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-03.csv"
-    val moonR003Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-03.bin"
-    val moonR004 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-04.csv"
-    val moonR004Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-04.bin"
-    val moonR005 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-05.csv"
-    val moonR005Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-05.bin"
-    val moonR006 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-06.csv"
-    val moonR006Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-06.bin"
-    val moonR007 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-07.csv"
-    val moonR007Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-07.bin"
-    val moonR008 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-08.csv"
-    val moonR008Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-08.bin"
-    val moonR009 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-09.csv"
-    val moonR009Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-09.bin"
-    val moonR010 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-10.csv"
-    val moonR010Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-10.bin"
-    val moonR011 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-11.csv"
-    val moonR011Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-11.bin"
-    val moonR012 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-12.csv"
-    val moonR012Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R0-12.bin"
+    val moonR000 = "MOON-R0-00.csv"
+    val moonR000Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_00.kt"
+    val moonR001 = "MOON-R0-01.csv"
+    val moonR001Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_01.kt"
+    val moonR002 = "MOON-R0-02.csv"
+    val moonR002Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_02.kt"
+    val moonR003 = "MOON-R0-03.csv"
+    val moonR003Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_03.kt"
+    val moonR004 = "MOON-R0-04.csv"
+    val moonR004Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_04.kt"
+    val moonR005 = "MOON-R0-05.csv"
+    val moonR005Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_05.kt"
+    val moonR006 = "MOON-R0-06.csv"
+    val moonR006Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_06.kt"
+    val moonR007 = "MOON-R0-07.csv"
+    val moonR007Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_07.kt"
+    val moonR008 = "MOON-R0-08.csv"
+    val moonR008Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_08.kt"
+    val moonR009 = "MOON-R0-09.csv"
+    val moonR009Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_09.kt"
+    val moonR010 = "MOON-R0-10.csv"
+    val moonR010Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_10.kt"
+    val moonR011 = "MOON-R0-11.csv"
+    val moonR011Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_11.kt"
+    val moonR012 = "MOON-R0-12.csv"
+    val moonR012Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R0_12.kt"
 
-    val moonR1 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R1.csv"
-    val moonR1Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R1.bin"
-    val moonR2 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R2.csv"
-    val moonR2Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R2.bin"
-    val moonR3 = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R3.csv"
-    val moonR3Bin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/MOON-R3.bin"
+    val moonR1 = "MOON-R1.csv"
+    val moonR1Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R1.kt"
+    val moonR2 = "MOON-R2.csv"
+    val moonR2Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R2.kt"
+    val moonR3 = "MOON-R3.csv"
+    val moonR3Kt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/MOON_R3.kt"
 
-    val nutation2000b = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/nutation-2000b.csv"
-    val nutation2000bBin = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/nutation-2000b.bin"
+    val nutation2000b = "nutation-2000b.csv"
+    val nutation2000bKt = "/home/andihasan7/IdeaProjects/csv2binary/app/src/main/resources/kotlin/nutation_2000b.kt"
 
-    // convert csv to binary
-    /*
-    ConvertCsvToBinary.convertNutation2000bCsvToBinary(nutation2000b, nutation2000bBin)
+    // convert csv to kotlin
+    
+    ConvertCsvToKotlin.convertNutation2000bCsvToKotlinArray(nutation2000b, nutation2000bKt)
 
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthL0, earthL0Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthL1, earthL1Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthL2, earthL2Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthL3, earthL3Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthL4, earthL4Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthL5, earthL5Bin)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthL0, earthL0Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthL1, earthL1Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthL2, earthL2Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthL3, earthL3Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthL4, earthL4Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthL5, earthL5Kt)
 
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthB0, earthB0Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthB1, earthB1Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthB2, earthB2Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthB3, earthB3Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthB4, earthB4Bin)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthB0, earthB0Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthB1, earthB1Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthB2, earthB2Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthB3, earthB3Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthB4, earthB4Kt)
 
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthR0, earthR0Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthR1, earthR1Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthR2, earthR2Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthR3, earthR3Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthR4, earthR4Bin)
-    ConvertCsvToBinary.convertVsop87dCsvToBinary(earthR5, earthR5Bin)
-     */
-
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL000, moonL000Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL001, moonL001Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL002, moonL002Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL003, moonL003Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL004, moonL004Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL005, moonL005Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL006, moonL006Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL007, moonL007Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL008, moonL008Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL009, moonL009Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL010, moonL010Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL011, moonL011Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL012, moonL012Bin)
-    /*
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL1, moonL1Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL2, moonL2Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonL3, moonL3Bin)
-     */
-
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB000, moonB000Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB001, moonB001Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB002, moonB002Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB003, moonB003Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB004, moonB004Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB005, moonB005Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB006, moonB006Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB007, moonB007Bin)
-    /*
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB1, moonB1Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonB2, moonB2Bin)
-     */
-
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR000, moonR000Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR001, moonR001Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR002, moonR002Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR003, moonR003Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR004, moonR004Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR005, moonR005Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR006, moonR006Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR007, moonR007Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR008, moonR008Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR009, moonR009Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR010, moonR010Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR011, moonR011Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR012, moonR012Bin)
-    /*
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR1, moonR1Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR2, moonR2Bin)
-    ConvertCsvToBinary.convertElpmpp02CsvToBinary(moonR3, moonR3Bin)
-     */
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthR0, earthR0Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthR1, earthR1Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthR2, earthR2Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthR3, earthR3Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthR4, earthR4Kt)
+    ConvertCsvToKotlin.convertVsop87dCsvToKotlinArray(earthR5, earthR5Kt)
 
 
-    // val binaryName = "/data.bin"
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL000, moonL000Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL001, moonL001Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL002, moonL002Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL003, moonL003Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL004, moonL004Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL005, moonL005Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL006, moonL006Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL007, moonL007Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL008, moonL008Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL009, moonL009Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL010, moonL010Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL011, moonL011Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL012, moonL012Kt)
+    
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL1, moonL1Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL2, moonL2Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonL3, moonL3Kt)
+    
+
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB000, moonB000Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB001, moonB001Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB002, moonB002Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB003, moonB003Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB004, moonB004Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB005, moonB005Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB006, moonB006Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB007, moonB007Kt)
+    
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB1, moonB1Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonB2, moonB2Kt)
+    
+
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR000, moonR000Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR001, moonR001Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR002, moonR002Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR003, moonR003Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR004, moonR004Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR005, moonR005Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR006, moonR006Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR007, moonR007Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR008, moonR008Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR009, moonR009Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR010, moonR010Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR011, moonR011Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR012, moonR012Kt)
+    
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR1, moonR1Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR2, moonR2Kt)
+    ConvertCsvToKotlin.convertElpmpp02CsvToKotlinArray(moonR3, moonR3Kt)
+    
+
+
+    // val binaryName = "/data.kt"
     // val totalCoefficients = ReaderBin.readVsop87dBinary(binaryName)
     // println("Total Coefficients: $totalCoefficients")
 }

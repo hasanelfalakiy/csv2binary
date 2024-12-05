@@ -19,12 +19,12 @@
 </p>
 
 # Tentang csv2binary
-Program ini digunakan untuk mengkonversi dan men-generate data tabular csv ke binary atau ke file Kotlin 2 dimensi (Array<DoubleArray), data tabular biasanya untuk keperluan kalkulasi data Ephemeris seperti VSOP87D & ELPMPP02 atau keperluan lain.
+Program ini digunakan untuk mengkonversi dan men-generate data tabular csv ke binary atau ke file Kotlin 2 dimensi (Array< DoubleArray >), data tabular biasanya untuk keperluan kalkulasi data Ephemeris seperti VSOP87D & ELPMPP02 atau keperluan lain.
 
 ## Fitur
 
 - [x] Konversi data tabular csv ke file format biner (binary .bin)
-- [x] Konversi data tabular csv ke file Kotlin 2 dimensi (Array<DoubleArray)
+- [x] Konversi data tabular csv ke file Kotlin 2 dimensi (Array< DoubleArray >)
 
 ## Ingin berkontribusi?
 > Jika Anda ingin berkontribusi, silahkan menggarpu (Fork) repositori ini, clone ke local machine, buat perubahan, push ke repositori fork, kirim pull request ke repositori ini
@@ -43,6 +43,7 @@ Program ini digunakan untuk mengkonversi dan men-generate data tabular csv ke bi
 
 ```
 csv2binary
+
 Copyright (C) 2024  Andi Hasan Ashari
 
 This program is free software: you can redistribute it and/or modify

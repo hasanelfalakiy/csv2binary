@@ -23,7 +23,7 @@ Program ini digunakan untuk mengkonversi dan men-generate data tabular csv ke bi
 
 ## Fitur
 
-- [x] Konversi data tabular csv ke file format biner (binary .bin)
+- [x] Konversi data tabular csv ke file format biner 2 dimensi (binary .bin) Array< DoubleArray >
 - [x] Konversi data tabular csv ke file Kotlin 2 dimensi (Array< DoubleArray >)
 
 ## Ingin berkontribusi?
